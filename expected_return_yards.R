@@ -93,3 +93,18 @@ rmse_two_stage_test <- sqrt(
 rmse_two_stage_test
 
 # Saving models
+
+# ------------------------------------------------------------
+# 1. Save Stage 1 model (probability of return)
+# ------------------------------------------------------------
+
+saveRDS(return_prob_fit, file = "return_prob_model.rds")
+
+# ------------------------------------------------------------
+# 2. Save Stage 2 model (expected yards given return)
+# ------------------------------------------------------------
+
+saveRDS(return_yards_fit, file = "exp_return_yards_model.rds")
+
+
+
